@@ -24,19 +24,19 @@ public class TimeClient {
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out = new PrintWriter(socket.getOutputStream(), true);
 
-//            for (int i = 0; i < 100; i++) {
-//
-//                out.println("QUERY TIME ORDER");
-//                System.out.print("Send order 2 server succeed: " + i + " ");
-//                String resp = in.readLine();
-//                System.out.println(resp);
-//
-//            }
-//            out.println("STOP");
-            out.println("QUERY TIME ORDER");
-            System.out.println("send order 2 server succeed");
-            String resp = in.readLine();
-            System.out.println(resp);
+            for (int i = 0; i < 100; i++) {
+
+                out.println("QUERY TIME ORDER");
+                System.out.print("Send order 2 server succeed: " + i + " ");
+                String resp = in.readLine();
+                System.out.println(resp);
+
+            }
+            out.println("STOP");
+//            out.println("QUERY TIME ORDER");
+//            System.out.println("send order 2 server succeed");
+//            String resp = in.readLine();
+//            System.out.println(resp);
 
 
         } catch (Exception e) {
