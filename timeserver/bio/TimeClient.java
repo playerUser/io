@@ -33,10 +33,7 @@ public class TimeClient {
 
             }
             out.println("STOP");
-//            out.println("QUERY TIME ORDER");
-//            System.out.println("send order 2 server succeed");
-//            String resp = in.readLine();
-//            System.out.println(resp);
+
 
 
         } catch (Exception e) {
