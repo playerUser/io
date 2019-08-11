@@ -111,8 +111,8 @@ public class MultiplexerTimeServer implements Runnable {
             ByteBuffer writeBuffer = ByteBuffer.allocate(bytes.length);
             writeBuffer.put(bytes);
             writeBuffer.flip();
-            int num = channel.write(writeBuffer);
-            System.out.println(num);
+            channel.write(writeBuffer);
+            //System.out.println(num);
 
 
         }
